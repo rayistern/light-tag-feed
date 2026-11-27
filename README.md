@@ -1,5 +1,7 @@
 # light-tag-feed
 
+**Hold: `parties.json` stays empty until Rayi approves the party list.** Once chabadlabs.ai serves `chanukah/config.json` with this file as `partiesUrl`, whatever is in it shows on every installed Light Tag phone, with no app or website change. Nothing goes in it before his approval.
+
 `parties.json` is the party list the Chanukah Hunt apps read, served at
 <https://rayistern.github.io/light-tag-feed/parties.json>.
 
