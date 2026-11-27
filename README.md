@@ -14,3 +14,12 @@ broken edit hides every party: check the file before pushing.
 - Required: `id` (unique, a-z 0-9 and -, up to 40), `name` (up to 80), `lat`, `lng`, `starts_at` (UTC to the second, ending `Z`, no fraction).
 - Optional: `ends_at` (after the start; left out means three hours), `details` (plain text, up to 500), `link` (https only), `kind` (`menorah`, `dreidel`, `gelt` or `donut`; left out means menorah), `scale` (1 to 3).
 - At most 200 parties. Take a party out once it has ended.
+
+`node check.mjs parties.json` says whether the list is good; it also runs on every push (see the Actions tab).
+
+## config.json
+
+`config.json` holds settings the apps read, served at
+<https://rayistern.github.io/light-tag-feed/config.json>. Today it is `{"version":1}`: nothing is set, so nothing happens.
+
+- minBuild (integer: phones on a lower build see 'please update'), storeUrl (optional, https apps.apple.com or play.google.com)
